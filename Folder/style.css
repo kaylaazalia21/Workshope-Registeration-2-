@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+form {
+    margin: 0 auto;
+    width: 500px;
+    padding: 1em 2em;
+    border: 1px solid #CACACA;
+    border-radius: 10px;
+    background-color: #fff;
+    font-family: Calibri, Arial, sans-serif;
+}
+
+form h1 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    text-align: right;
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+    margin: 4px;
+    padding: 8px
+}
+
+input, textarea, select {
+    font-family: Calibri, Arial, sans-serif;
+    width: 250px;
+    padding: 8px;
+    margin: 4px;
+    border: 1px solid #CACACA;
+    border-radius: 4px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    width: 47%;
+    margin-top: 20px;
+}
+
+button.reset {
+    background-color: #C00000;
+}
+
+button.reset:hover {
+    background-color: #900000;
+}
+
+button.submit {
+    background-color: green;
+}
+
+button.submit:hover {
+    background-color: darkgreen;
+}
+
+.required {
+    color: red;
+    font-weight: bold;
+}
+
+.message {
+    display: none;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+    border-radius: 0px;
+}
+
+.message.success {
+    background-color: #CCEECC;
+    color: black;
+}
+
+.message.error {
+    background-color: #EECCCC;
+    color: black;
+}

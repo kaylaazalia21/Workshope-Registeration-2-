@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Registration</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form id="registrationForm">
+        <h1>Workshop Registration</h1>
+        <div id="message" class="message"></div>
+        <div>
+            <label for="name">Name  <span class="required">*</span></label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div>
+            <label for="email">Email  <span class="required">*</span></label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="address">Address</label>
+            <textarea
+            id="address" name="address"></textarea>
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <select id="age" name="age">
+                <option value="">- Select Age -</option>
+                <option value="under17">under 17</option>
+                <option value="17-25">17-25</option>
+                <option value="26-35">26-35</option>
+                <option value="above35">above 35</option>
+            </select>
+        </div>
+        <div class="buttons">
+            <button type="reset" id="resetBtn" class="reset">Reset</button>
+            <button type="submit" id="submitBtn" class="submit">Submit Form</button>
+        </div>
+    </form>
+</body>
+</html>
